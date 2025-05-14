@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Alazari - Digital Artist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script_new.js" defer></script>
+</head>
+<body id="top">    <header>
+        <nav>
+            <div class="brand">
+                <h1><a href="#top">Felipe Alazari</a></h1>
+            </div>
+            
+            <button id="theme-toggle" aria-label="Toggle theme">
+                <svg class="sun" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+                <svg class="moon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 A7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero-bg"></div>
+        </section>        <section id="gallery">
+            <h2>Work</h2>
+            <div class="gallery-grid">
+                <article class="art-card">
+                    <div class="art-preview">
+                        <img class="final-art" src="images/Sonny_2023(FULL).png" alt="Sonny - Final Artwork">
+                        <div class="art-info">
+                            <h3>Sonny</h3>
+                            <p>Character design for a personal project</p>
+                        </div>
+                    </div>
+                    <div class="art-details hidden">
+                        <img src="/images/sonny-sketch.png" alt="Sonny - Sketch" class="process-image">
+                    </div>
+                </article>
+                <article class="art-card">
+                    <div class="art-preview">
+                        <img class="final-art" src="images/Letícia-Bord.png" alt="Letícia - Final Artwork">
+                        <div class="art-info">
+                            <h3>Letícia Ramone</h3>
+                            <p>Original Character</p>
+                        </div>
+                    <div>
+                        <div class="art-details hidden">
+                            <img src="/images/leticia-sketch.png" alt="Letícia - Sketch" class="process-image">
+                    </div>
+                    </div>
+                    <div class="art-details hidden">
+                        <img src="/images/leticia-sketch.png" alt="Letícia - Sketch" class="process-image">
+                    </div>
+                </article>
+                <article class="art-card">
+                    <div class="art-preview">
+                        <img class="final-art" src="images/hero-bg.png" alt="Hero Artwork">
+                        <div class="art-info">
+                            <h3>Hero Artwork</h3>
+                            <p>Featured illustration</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="art-card">
+                    <div class="art-preview">
+                        <img class="final-art" src="/images/halloweenEvento2.png" alt="Hero Artwork">
+                        <div class="art-info">
+                            <h3>Hero Artwork</h3>
+                            <p>Featured illustration</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="art-card">
+                    <div class="art-preview">
+                        <img class="final-art" src="/images/Império Vetery.png" alt="Hero Artwork">
+                        <div class="art-info">
+                            <h3>Hero Artwork</h3>
+                            <p>Featured illustration</p>
+                        </div>
+                    </div>
+            </div>            <!-- Lightbox -->
+            <div class="lightbox" id="lightbox">
+                <button class="nav-btn prev-btn" aria-label="Previous image">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="nav-btn next-btn" aria-label="Next image">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <button class="close-btn" aria-label="Close lightbox">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="lightbox-content">
+                    <!-- Content will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <article class="project-feature">
+                    <div class="project-header">
+                        <h3>Inaventuras</h3>
+                    </div>
+                    <div class="project-content">
+                        <img src="/images/ValentimFIN.jpg" alt="Comic Preview">
+                        <div class="project-info">
+                            <p class="project-description">
+                                Uma história sobre um jovem arquiteto que descobre um portal misterioso em uma de suas obras. 
+                                Enquanto tenta desvendar os segredos por trás dessa descoberta, ele se vê envolvido em uma 
+                                trama que mistura arquitetura antiga, simbolismos e elementos sobrenaturais.
+                            </p>
+                            <div class="project-progress">
+                                <h4>Development Status</h4>
+                                <p>Atualmente em desenvolvimento. Você pode acompanhar a história na minha página no <a href="https://fliptru.com.br/@Felipe_Alazari">Fliptru</a>. Fique ligado nas atualizações!</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="/images/profile.jpg" alt="Felipe Alazari">
+                <div class="bio">
+                    <p>Your artist bio here...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact & Social Media</h2>
+            <div class="contact-info">
+                <!-- Email -->
+                <a href="mailto:contact@felipealazari.com" aria-label="Email">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+                <!-- ArtStation -->
+                <a href="https://www.artstation.com/felipealazari" target="_blank" aria-label="ArtStation">
+                    <i class="fa-brands fa-artstation"></i>
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/felipealazari/" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <!-- Twitter/X -->
+                <a href="https://x.com/FelipeAlazari" target="_blank" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Felipe Alazari. All rights reserved.</p>
+    </footer>
+</body>
+</html>
